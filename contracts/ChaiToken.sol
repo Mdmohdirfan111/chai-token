@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract ChaiToken is ERC20, Ownable {
     uint256 public constant TAX_RATE = 200; // 2% tax
-    address public constant TREASURY = 0x742d35Cc6634C0532925a3b844Bc454e4438f44e;
+    address public constant TREASURY = 0xEF253F8E8839fe1E34159c7301078cc490aad7E2;
 
     constructor() ERC20("Chai Token", "CHAI") Ownable(msg.sender) {
         _mint(msg.sender, 10_000_000 * 10**18);
